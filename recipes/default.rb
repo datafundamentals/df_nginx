@@ -6,3 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe "nginx::default"
+
+include_recipe "df_nginx::server_block"
+
+include_recipe "df_nginx::site_dir"
