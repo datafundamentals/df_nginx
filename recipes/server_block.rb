@@ -1,7 +1,5 @@
-link "/etc/nginx/sites-enabled/default" do 
-	action :delete
-end
 
+#deleting default file as it is redundant
 file "/etc/nginx/sites-available/default" do 
 	action :delete
 	only_if { File.file?('/etc/nginx/sites-available/default') }
